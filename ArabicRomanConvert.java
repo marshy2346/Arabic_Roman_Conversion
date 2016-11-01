@@ -229,11 +229,11 @@ public class ArabicRomanConvert extends JFrame {
                     char[] charArr = str.toCharArray();
                     for (int i = 0; i < charArr.length; i++) {
                         if (charArr[i] == 'I') {
-                            if ((i + 1) < charArr.length - 2
+                            if ((i + 1) < charArr.length
                                     && charArr[i + 1] == 'V') {
                                 arabicValue += 4;
                                 i++;
-                            } else if ((i + 1) < charArr.length - 2
+                            } else if ((i + 1) < charArr.length 
                                     && charArr[i + 1] == 'X') {
                                 arabicValue += 9;
                                 i++;
@@ -243,11 +243,11 @@ public class ArabicRomanConvert extends JFrame {
                         } else if (charArr[i] == 'V') {
                             arabicValue += 5;
                         } else if (charArr[i] == 'X') {
-                            if ((i + 1) < charArr.length - 2
+                            if ((i + 1) < charArr.length
                                     && charArr[i + 1] == 'L') {
                                 arabicValue += 40;
                                 i++;
-                            } else if ((i + 1) < charArr.length - 2
+                            } else if ((i + 1) < charArr.length
                                     && charArr[i + 1] == 'C') {
                                 arabicValue += 90;
                                 i++;
@@ -257,11 +257,11 @@ public class ArabicRomanConvert extends JFrame {
                         } else if (charArr[i] == 'L') {
                             arabicValue += 50;
                         } else if (charArr[i] == 'C') {
-                            if ((i + 1) < charArr.length - 2
+                            if ((i + 1) < charArr.length
                                     && charArr[i + 1] == 'D') {
                                 arabicValue += 400;
                                 i++;
-                            } else if ((i + 1) < charArr.length - 2
+                            } else if ((i + 1) < charArr.length
                                     && charArr[i + 1] == 'M') {
                                 arabicValue += 900;
                                 i++;
